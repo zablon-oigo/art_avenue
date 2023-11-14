@@ -16,7 +16,7 @@ export default function Story({img}){
                             <div className="md:col-span-2 col-span-1 mx-0  md:mx-4">
                                 
                                 <h2 className="text-4xl mb-2 px-2 text-yellow-500 font-semibold capitalize text-center md:text-start">My story</h2>
-                                <p className="text-xl -mx-12 px-6  md:-mx-4  md:text-start text-gray-500 line-clamp-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente voluptates modi minima consequuntur et excepturi odit reprehenderit vel asperiores. Id libero similique provident labore veniam impedit aliquam ipsam nihil excepturi nostrum tempora quam vero, corrupti quibusdam. Inventore, autem rem.</p>
+                                <p className="text-xl -mx-12 text-justify px-6  md:-mx-4  md:text-start text-gray-500 line-clamp-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente voluptates modi minima consequuntur et excepturi odit reprehenderit vel asperiores. Id libero similique provident labore veniam impedit aliquam ipsam nihil excepturi nostrum tempora quam vero, corrupti quibusdam. Inventore, autem rem.</p>
                                 <div className="mt-6 mx-2">
                                     <a href="" className="text-lg text-center text-yellow-500 hover:text-yellow-700 capitalize">readmore.....</a>
                                 </div>
