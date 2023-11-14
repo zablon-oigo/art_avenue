@@ -14,12 +14,13 @@ export default function Header({img}){
                 <nav className=" p-6 mb-6 text-white max-w-6xl mx-auto flex items-center justify-between">
                     <div className="">
                         <a href="" className="md:text-4xl text-3xl">ArtHaven</a>
+                        <hr className="border-dotted border-2 border-yellow-500 w-1/2 rounded-xl" />
                     </div>
-                    <button className="md:hidden block" onClick={toggleMenu}>
+                    <button className="md:hidden block" onClick={toggleMenu} >
                     {isMenuOpen ? (
-                        <FaX className="text-3xl"/>
+                        <span className="" ><FaX className="text-3xl animate-pulse"/></span>
                     ) : (
-                        <FaBurger className="text-3xl"/>
+                        <span className="" ><FaBurger className="text-3xl animate-pulse"/></span>
                     )}
                                     
                         
