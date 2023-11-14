@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 import { FaBars, FaBurger,FaX} from "react-icons/fa6";
 export default function Header({img}){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,12 +27,13 @@ export default function Header({img}){
                         
                     </button>
                     <div className="space-x-6 md:block hidden">
-                        <a href="" className="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-75 hover:-translate-y-1 hover:ease-in-out">Home</a>
-                        <a href="" className="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">Portfolio</a>
-                        <a href="" className="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">About</a>
-                        <a href="" className="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">Contact</a>
-
+                        <Link to="/" clLinkssName="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-75 hover:-translate-y-1 hover:ease-in-out">Home</Link>
+                        <Link to="/portfolio" className="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">Portfolio</Link>
+                        <Link  to="/about" className="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">About</Link>
+                        <Link  to="/contact" className="text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">Contact</Link>
+                             
                         </div>
+                        <Outlet/>
                 </nav>
                 <div className="max-w-6xl mx-auto ">
                     <div className="flex items-center md:flex-row flex-col-reverse justify-between">
