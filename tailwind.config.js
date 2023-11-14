@@ -9,7 +9,13 @@ export default {
       backgroundImage:{
         'hero-image':"url('/src/assets/images/header.jpg')",
         'about-image':"url('/src/assets/images/about.jpg')",
+        'story-image':"url('/src/assets/images/story.jpg')",
+
+      },
+      fontFamily:{
+        'sign':['Yellowtail','cursive']
       }
+
     },
   },
   plugins: [],
