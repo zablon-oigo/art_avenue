@@ -1,4 +1,22 @@
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 export default function Exhibition({img}){
+    const responsiveSettings = [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
+    ];
     return (
         <>
         <section className="my-20">
@@ -16,30 +34,42 @@ export default function Exhibition({img}){
                 </div>
                 
             </div>
+            <section className="">
             <div className="my-14  grid md:grid-cols-3 grid-cols-1 place-content-center justify-center justify-items-center gap-3  ">
-                    <div className="mb-6">
-                        <img src={img.library3} alt="" className="h-80 border-8 border-gray-200 w-full rounded-xl object-center object-cover" />
-                        <div className="mt-6">
-                        <p className="text-xl text-center">10 Jan 2024 - 20 Feb 2024 </p>
-                        <h3 className="uppercase text-center text-2xl  font-semibold text-yellow-500">USA Embassy Mega Expo</h3>
-                    </div>
-                        </div>
-                    <div className="mb-6">
-                        <img src={img.library2} alt="" className="h-80 w-full border-8 border-gray-200 rounded-xl object-center object-cover" />
-                        <div className="mt-6">
-                        <p className="text-xl text-center">10 Feb 2024 - 20 March 2024 </p>
-                        <h3 className="uppercase text-center text-2xl  font-semibold text-yellow-500">Nairobi national park Expo</h3>
-                    </div>
-                    </div>
-                    <div className="mb-6">
-                        <img src={img.library1} alt="" className="border-8 border-gray-200 h-80 rounded-xl w-full object-center object-cover" />
-                        <div className="mt-6">
-                        <p className="text-xl text-center">10 June 2024 - 20 July 2024 </p>
-                        <h3 className="uppercase text-center text-2xl  font-semibold text-yellow-500">British Embassy Mega Meet</h3>
-                        </div>
-                    
-                    </div>
-            </div>
+
+           
+                
+                   <div className="mb-6">
+                   <img src={img.library3} alt="" className="h-80 border-8 border-gray-200 w-full rounded-xl object-center object-cover" />
+                   <div className="mt-6">
+                   <p className="text-xl text-center">10 Jan 2024 - 20 Feb 2024 </p>
+                   <h3 className="uppercase text-center text-2xl  font-semibold text-yellow-500">USA Embassy Mega Expo</h3>
+               </div>
+                   </div>
+               <div className="mb-6">
+                   <img src={img.library2} alt="" className="h-80 w-full border-8 border-gray-200 rounded-xl object-center object-cover" />
+                   <div className="mt-6">
+                   <p className="text-xl text-center">10 Feb 2024 - 20 March 2024 </p>
+                   <h3 className="uppercase text-center text-2xl  font-semibold text-yellow-500">Nairobi national park Expo</h3>
+               </div>
+               </div>
+               <div className="mb-6">
+                   <img src={img.library1} alt="" className="border-8 border-gray-200 h-80 rounded-xl w-full object-center object-cover" />
+                   <div className="mt-6">
+                   <p className="text-xl text-center">10 June 2024 - 20 July 2024 </p>
+                   <h3 className="uppercase text-center text-2xl  font-semibold text-yellow-500">British Embassy Mega Meet</h3>
+                   </div>
+               
+               </div>
+              
+
+                  
+           
+                
+               
+
+            </div> 
+            </section>
         </section>
         </>
     );

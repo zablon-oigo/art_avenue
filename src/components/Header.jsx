@@ -54,15 +54,15 @@ export default function Header({img}){
                 </div>
                 <section className={`absolute bg-white top-20 right-0 w-full block ${isMenuOpen ? 'block' : 'hidden'}`}>
                             <ul className="space-y-4 mx-2 my-4">
-                                <li className="text-lg font-semibold "><a href="" className="">Home</a></li>
+                                <li className="text-lg font-semibold hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700 "><a href="" className="">Home</a></li>
                                 <hr className="border-1 border-gray-400" />
-                                <li className="text-lg font-semibold"><a href="" className="">Portfolio</a></li>
-                                <hr className="border-1 border-gray-400" />
-
-                                <li className="text-lg font-semibold"><a href="" className="">About</a></li>
+                                <li className="text-lg font-semibold hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700"><a href="" className="">Portfolio</a></li>
                                 <hr className="border-1 border-gray-400" />
 
-                                <li className="text-lg font-semibold"><a href="" className="">Contact</a></li>
+                                <li className="text-lg font-semibold hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700"><a href="" className="">About</a></li>
+                                <hr className="border-1 border-gray-400" />
+
+                                <li className="text-lg font-semibold hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700"><a href="" className="">Contact</a></li>
                                 <hr className="border-1 border-gray-400" />
 
                             </ul>
