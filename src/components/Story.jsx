@@ -12,6 +12,7 @@ export default function Story({img}){
                         <div className="grid md:grid-cols-3 grid-cols-1 gap-2 justify-items-center place-content-center justify-center ">
                             <div className="col-span-1 md:mx-4 mx-0">
                                 <img src={img.artist} alt="" className="md:-rotate-12 shadow-2xl  skew-y-6 md:skew-y-0 hover:scale-110 hover:ease-in-out hover:transition-all hover:duration-700 hover:delay-300 rounded-2xl  w-full mb-4" />
+                                
                             </div>
                             <div className="md:col-span-2 col-span-1 mx-0  md:mx-4">
                                 

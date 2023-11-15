@@ -1,9 +1,9 @@
-
+import Home from "./Home";
 import Footer from "../components/Footer";
 export default function Portfolio({img}){
     return (
         <>
-        
+        <Home/>
         <section className="">
             <div className="bg-gray-100 p-10 py-14">
             <h2 className="text-8xl font-bold text-center md:text-start text-yellow-500">My Artwork</h2>
