@@ -13,7 +13,6 @@ import abstract3 from './assets/images/abstract3.jpg'
 import drawing1 from './assets/images/hand1.jpg'
 import drawing2 from './assets/images/hand2.jpg'
 import drawing3 from './assets/images/hand3.jpg'
-import Home from './pages/Home.jsx'
 import map from './assets/images/maps.jpg'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 const images={
@@ -28,7 +27,6 @@ const images={
 }
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<App /> }/>

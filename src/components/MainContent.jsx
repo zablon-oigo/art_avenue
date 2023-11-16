@@ -19,7 +19,7 @@ export default function Main({img}){
                          </div>
                          <img src={img.drawing2} alt="" className="rounded border-8 border-gray-950 hover:transition-all hover:duration-1000 hover:delay-500 hover:ease-in-out hover:scale-110 hover:-translate-y-2" />
                          <div className="mt-6">
-                            <h2 className="font-semibold text-4xl mb-4 text-yellow-500">Abstract Acrylic</h2>
+                            <h2 className="font-semibold text-4xl mb-4 text-yellow-500">Abstract Canvas</h2>
                             <p className="text-md text-white font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, maxime! Beatae, harum iusto. Corporis earum at asperiores qui dicta perferendis.</p>
                         </div>
                      </div>

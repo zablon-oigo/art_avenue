@@ -1,7 +1,54 @@
-import Footer from '../components/Footer'
+import { Outlet, Link } from "react-router-dom";
+import { FaBurger,FaX} from "react-icons/fa6";
+import Footer from "../components/Footer";
+import { useState } from "react";
 export default function About ({img}){
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <>
+          <nav className="bg-black text-white p-6 flex itmes-center justify-between relative">
+        <div className="">
+                        <a href="" className="md:text-4xl text-3xl">ArtHaven</a>
+                        <hr className="border-dotted border-2 border-yellow-500 w-1/2 rounded-xl" />
+                    </div>
+                    <button className="md:hidden block" onClick={toggleMenu} >
+                    {isMenuOpen ? (
+                        <span className="" ><FaX className="text-3xl animate-pulse"/></span>
+                    ) : (
+                        <span className="" ><FaBurger className="text-3xl animate-pulse"/></span>
+                    )}
+                                    
+                        
+                    </button>
+                    <div className="space-x-6 md:block hidden">
+                        <Link to="/" className="text-xl  font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-75 hover:-translate-y-1 hover:ease-in-out">Home</Link>
+                        <Link to="/portfolio" className="text-xl   font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">Portfolio</Link>
+                        <Link  to="/about" className="underline decoration-2 underline-offset-4 hover:no-underline text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">About</Link>
+                        <Link  to="/contact" className=" text-xl font-medium transition-all hover:delay-300 hover:text-yellow-500 hover:duration-1000 hover:scale-125 hover:-translate-y-1 hover:ease-in-out">Contact </Link>
+                             
+                        </div>
+                        <Outlet/>
+          
+        </nav>
+        <section className={` bg-white absolute top-20 md:hidden  w-full origin-top animate-open-menu  ${isMenuOpen ? 'block' : 'hidden'}`}>
+                            <ul className="space-y-4 mx-2 my-4">
+                                <li className="text-lg font-semibold hover:bg-gray-100 hover:rounded px-6 py-4    hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700 "><Link to="/">Home</Link></li>
+                                <hr className="border-1 border-gray-400" />
+                                <li className="text-lg font-semibold hover:bg-gray-100 hover:rounded px-6 py-4 hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700"><Link to="portfolio">Portfolio</Link></li>
+                                <hr className="border-1 border-gray-400" />
+
+                                <li className="text-lg font-semibold hover:bg-gray-100 hover:rounded px-6 py-4 hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700"><Link to="about">About</Link></li>
+                                <hr className="border-1 border-gray-400" />
+
+                                <li className="text-lg font-semibold hover:bg-gray-100 hover:rounded px-6 py-3 hover:text-yellow-500 hover:translate-x-2 hover:transition-all hover:delay-300 hover:duration-700"><Link to="contact">Contact</Link></li>
+                           
+                            </ul>
+                            <Outlet/>
+                </section>
         <section className="">
             <div className="bg-gray-100 px-20 py-20">
                 <h2 className="md:text-8xl text-6xl font-bold text-yellow-500 text-center md:text-start">About Me</h2>

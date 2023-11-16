@@ -12,7 +12,7 @@ import library1 from './assets/images/library1.jpg'
 import library2 from './assets/images/library2.jpg'
 import library3 from './assets/images/library3.jpg'
 import Footer from './components/Footer'
-import Home from './pages/Home.jsx'
+
 function App() {
     
   const images={
@@ -29,7 +29,6 @@ function App() {
 
   return (
     <>
-    <Home/>
    <Header img={hero}/>
     <Main  img={images}/>
     <Story img={images}/>
