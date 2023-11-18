@@ -8,7 +8,36 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 ## image credits
 [unspalsh](https://unsplash.com/ )
-  
+## Tech Stack
+
+**Client:** React, TailwindCSS
+
+  ## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:zablon-oigo/art_avenue.git
+```
+
+Go to the project directory
+
+```bash
+  cd art_avenue
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
 ![Screenshot 2023-11-16 at 18-24-10 Vite React](https://github.com/zablon-oigo/art_avenue/assets/143833326/9d152e4b-7b34-4499-a747-23b62eb218b7)
 
 ![Screenshot 2023-11-16 at 18-24-27 Vite React](https://github.com/zablon-oigo/art_avenue/assets/143833326/159ad8b8-4c81-4d02-8f32-ed44baf32ca2)
